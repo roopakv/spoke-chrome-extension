@@ -1,1 +1,25 @@
-<h1> Here we are in the creation directive </h1>
+<md-card ng-if="!ctrl.isLoading">
+	<md-card-content layout="column">
+		<md-input-container>
+			 <label>Link</label>
+			 <input name="orgId" ng-model="ctrl.link" required></input>
+    </md-input-container>
+    <md-input-container>
+			 <label>Title</label>
+			 <input name="orgId" ng-model="ctrl.title" required></input>
+    </md-input-container>
+    <md-input-container>
+			 <label>Description</label>
+			 <textarea name="orgId" ng-model="ctrl.description"></textarea>
+    </md-input-container>
+    <md-button 
+      class="md-primary"
+      ng-click="ctrl.addToKb()">
+        Add to Spoke Kb
+    </md-button>
+	</md-card-content>
+</md-card>
+<md-progress-circular 
+  md-mode="indeterminate"
+  ng-if="ctrl.isLoading">  	
+</md-progress-circular>

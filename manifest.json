@@ -10,15 +10,11 @@
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "incognito": "spanning",
   "permissions": [
-    "tabs",
+    "activeTab",
     "storage",
     "cookies",
     "*://*.askspoke-staging.com/*",
     "*://*.askspoke-local.com/*",
-    "*://*.askspoke.com/*",
-    "*://go/*",
-    "clipboardRead",
-    "clipboardWrite",
-    "notifications"
+    "*://*.askspoke.com/*"
   ]
 }
