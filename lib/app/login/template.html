@@ -1,0 +1,18 @@
+<md-card>
+	<md-card-content>
+     <h2>Login</h2>
+     <p>
+     	  If you aren't logged into spoke on Chrome, this will open a new tab and 
+     	  prompt you to do so
+     </p>
+     <md-input-container>
+			 <label>Org Id</label>
+			 <input name="orgId" ng-model="ctrl.orgId" required md-maxlength="150"></textarea>
+    </md-input-container>
+    <md-button 
+      class="md-primary"
+      ng-click="ctrl.attemptLogin()">
+        Login to Org
+    </md-button>
+  </md-card-content>
+</md-card>

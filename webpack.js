@@ -14,7 +14,7 @@ const vendorFiles = [
   './node_modules/angular-aria/angular-aria.min.js',
   './node_modules/angular-messages/angular-messages.min.js',
   './node_modules/angular-material/angular-material.min.js',
-  './node_modules/angular-ui-router/release/angular-ui-router.min.js'
+  './node_modules/@uirouter/angularjs/release/angular-ui-router.min.js'
 ];
 
 module.exports = {

@@ -1,3 +1,10 @@
-<div layout="row">
-  <h4>Nothing to see here. (yet)</h4>
+<div layout="row" ng-if="loading">
+  <h4>Loading</h4>
 </div>
+<login
+  ng-if="shouldLogin"></login>
+<ui-view 
+  noanimation 
+  flex
+  ng-if="!shouldLogin">
+</ui-view>
