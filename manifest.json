@@ -4,8 +4,12 @@
   "manifest_version": 2,
   "description": "Easily add knowledge base entries to Spoke",
   "browser_action": {
+    "default_icon": "lib/images/logo44.png",
     "default_title": "Add to Spoke",
     "default_popup": "lib/popup.html"
+  },
+  "icons": {
+    "48": "lib/images/logo44.png"
   },
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "incognito": "spanning",
