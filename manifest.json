@@ -13,8 +13,6 @@
     "activeTab",
     "storage",
     "cookies",
-    "*://*.askspoke-staging.com/*",
-    "*://*.askspoke-local.com/*",
     "*://*.askspoke.com/*"
   ]
 }
