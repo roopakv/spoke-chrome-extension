@@ -5,3 +5,8 @@ To build bundle.
 ```
 webpack --config webpack.js
 ``` 
+
+To build publishable script
+```
+node scripts/create_publishable_zip.js
+```
