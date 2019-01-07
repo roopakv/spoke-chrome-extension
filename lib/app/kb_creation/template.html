@@ -13,7 +13,12 @@
 				 <label>Description</label>
 				 <textarea name="orgId" ng-model="ctrl.description"></textarea>
 	    </md-input-container>
-	    <md-button 
+			<md-input-container>
+				 <md-select placeholder="File under team" ng-model="ctrl.team" md-on-open="loadTeams()">
+      		<md-option ng-value="team.id" ng-repeat="team in ctrl.teams">{{team.name}}</md-option>
+    		</md-select>
+			</md-input-container>
+	    <md-button
 	      class="md-primary"
 	      ng-click="ctrl.addToKb()">
 	        Add to Spoke Kb
@@ -26,7 +31,7 @@
 		</md-card-content>
 	</md-card>
 </div>
-<md-progress-circular 
+<md-progress-circular
   md-mode="indeterminate"
-  ng-if="ctrl.isLoading">  	
+  ng-if="ctrl.isLoading">
 </md-progress-circular>
