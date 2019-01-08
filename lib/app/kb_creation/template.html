@@ -5,7 +5,7 @@
 				 <label>URL</label>
 				 <input name="orgId" ng-model="ctrl.link" required></input>
 	    </md-input-container>
-			<div class="attachment-container" layout="row" layout-align="start center">
+			<div class="attachment-container" layout="row" layout-align="start center" ng-if="ctrl.linkInfo.title && ctrl.linkInfo.description">
 				<div class="attachment-preview" style="background-image: url({{ctrl.linkInfo.image.originalUrl}});"></div>
 				<div class="spacer"></div>
 				<div flex>
