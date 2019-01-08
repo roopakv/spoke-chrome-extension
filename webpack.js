@@ -1,10 +1,7 @@
 'use strict';
 
-console.log('sdds');
 const path = require('path');
 const webpack = require('webpack');
-
-console.log('sdds');
 
 const ConcatPlugin = require('webpack-concat-plugin');
 
@@ -22,6 +19,7 @@ module.exports = {
   mode: 'development',
   entry: {
     'app': './lib/app/app.js',
+    'app.newpage': './lib/app/new_page.js',
   },
   output: {
     filename: '[name].js',
