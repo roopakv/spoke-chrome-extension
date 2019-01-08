@@ -5,16 +5,18 @@
       <h1 class="md-headline">Spoke</h1>
     </md-card-title>
     <md-card-content>
-      <form ng-submit="ctrl.submit()">
+      <form ng-submit="ctrl.submit()" class="search-form">
         <input
             md-no-float
             required
             focus-if="1"
             autocomplete="off"
-            placeholder="Need anything at {{ctrl.orgId}}?"
+            placeholder="Need anything at {{ctrl.org.name}}?"
             ng-model="ctrl.query"
             class="search-input"
             name="query" />
+        <img class="search-icon" src="https://static.askspoke.com/img/logo/icon-spoke-red-96.png" ng-if="!ctrl.query || !ctrl.user.avatar" />
+        <img class="search-icon" src="{{ctrl.user.avatar}}" ng-if="ctrl.user.avatar && ctrl.query" />
         <input type="submit" style="display:none;"/>
       </form>
     </md-card-content>
