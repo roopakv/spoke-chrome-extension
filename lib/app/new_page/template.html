@@ -2,7 +2,9 @@
   <md-card ng-if="ctrl.isLoggedIn" class="search-box-card">
     <md-card-title class="search-box-title">
       <img src="https://static.askspoke.com/img/logo/avatar-96.png" /><br />
-      <h1 class="md-headline">Spoke</h1>
+      <h1 class="md-headline">
+        <a href="{{ctrl.org.orgUrl}}">{{ctrl.org.name}}</a> — Spoke
+      </h1>
     </md-card-title>
     <md-card-content>
       <form ng-submit="ctrl.submit()" class="search-form">

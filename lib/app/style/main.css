@@ -18,6 +18,11 @@
   margin: 0 auto;
 }
 
+.md-headline a {
+  text-decoration: none;
+  color: #504b47;
+}
+
 .search-input {
   background-color: #f5f4f3;
   border: 2px solid transparent;
