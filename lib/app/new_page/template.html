@@ -21,6 +21,28 @@
         <img class="search-icon" src="{{ctrl.user.avatar}}" ng-if="ctrl.user.avatar && ctrl.query" />
         <input type="submit" style="display:none;"/>
       </form>
+      <div class="resources" ng-if="ctrl.resources.length > 0">
+        <hr />
+        <h2 class="md-headline">Most recent articles</h2>
+        <md-button ng-href="{{resource.permalink}}" target="_blank" class="resource" ng-repeat="resource in ctrl.resources">
+          <img src="{{resource.author.avatar}}" ng-if="resource.author.avatar" />
+          <img src="https://static.askspoke.com/img/icons/users/avatar-default.png" ng-if="!resource.author.avatar" />
+
+          <p class="resource-header">
+            <span>
+              {{resource.author.displayName}} added <span ng-if="resource.type !== 'text'"> a {{resource.type}}</span><span ng-if="resource.team"> to {{resource.team.name}}</span>
+            </span>
+          </p>
+
+          <p class="resource-title">
+            {{resource.title}}
+          </p>
+        </md-button>
+
+        <md-button class="kb-button md-raised" ng-href="{{ctrl.org.orgUrl}}/kb">
+          View all resources
+        </md-button>
+      </div>
     </md-card-content>
   </md-card>
   <login ng-if="!ctrl.isLoggedIn"></login>
