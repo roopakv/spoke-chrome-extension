@@ -1,3 +1,7 @@
+html {
+  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', -apple-system, BlinkMacSystemFont, 'Avenir Next', Helvetica, Arial, sans-serif !important;
+}
+
 .popup-container {
   width: 600px;
 }
