@@ -1,10 +1,20 @@
-<div ng-if="!ctrl.isLoading">
-	<md-card ng-if="!ctrl.resourceSaved">
+<div ng-if="!ctrl.isLoading" class="kb-container-bg">
+	<md-card ng-if="!ctrl.resourceSaved" class="kb-container">
 		<md-card-content layout="column">
-			<md-input-container>
-				 <label>Link</label>
+			<md-input-container class="url-container">
+				 <label>URL</label>
 				 <input name="orgId" ng-model="ctrl.link" required></input>
 	    </md-input-container>
+			<div class="attachment-container" layout="row" layout-align="start center">
+				<div class="attachment-preview" style="background-image: url({{ctrl.linkInfo.image.originalUrl}});"></div>
+				<div class="spacer"></div>
+				<div flex>
+					<h5>{{ctrl.linkInfo.title}}</h5>
+					<p class="attachment-text-description">
+					  {{ctrl.linkInfo.description}}
+					</p>
+				</div>
+			</div>
 	    <md-input-container>
 				 <label>Title</label>
 				 <input name="orgId" ng-model="ctrl.title" required></input>

@@ -1,6 +1,5 @@
 .popup-container {
   width: 600px;
-  height: 100%;
 }
 
 .new-page-container {
@@ -64,4 +63,48 @@
   padding: 12px 24px 12px 24px;
   cursor: text;
   color: #504b47;
+}
+
+.kb-container input, .kb-container textarea, .kb-container select {
+  background-color: #f5f4f3;
+  border: 2px solid transparent;
+  border-color: #f5f4f3 !important;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: none;
+  cursor: text;
+  color: #504b47;
+}
+
+md-input-container label {
+  border-color: #00bcd4 !important;
+}
+
+.attachment-preview {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.spacer {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+
+.attachment-container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.kb-container, .kb-container-bg {
+  background-color: #f5f4f3;
+}
+
+md-input-container {
+  margin-bottom: 0;
 }
