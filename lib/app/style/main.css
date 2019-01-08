@@ -131,3 +131,60 @@ md-input-container label {
 md-input-container {
   margin-bottom: 0;
 }
+
+.resources {
+  margin-bottom: 20px;
+}
+
+.resources h2 {
+  margin: 8px;
+  text-align: center;
+  color: #918a84;
+  text-transform: none;
+}
+
+.resources hr {
+  margin-top: 32px;
+  border-color: #f5f4f3;
+}
+
+.resource {
+  padding: 16px 8px 8px 8px;
+  margin: 8px 0;
+  background-color: #f5f4f3;
+  border-color: #f5f4f3;
+  vertical-align: middle;
+  width: 100%;
+  text-transform: none;
+  text-align: left;
+}
+
+.resource img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  float: left;
+}
+
+.resource-header {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #504b47;
+  margin: 4px 0 0 40px;
+  vertical-align: middle;
+}
+
+.resource-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 16px 0 8px 0;
+}
+
+.kb-button {
+  width: 100%;
+  text-align: center;
+  margin: 8px auto;
+  text-transform: none;
+}
