@@ -1,18 +1,17 @@
-<md-card>
+<md-card class="login">
 	<md-card-content>
-     <h2>Login</h2>
-     <p>
-     	  If you aren't logged into spoke on Chrome, this will open a new tab and 
-     	  prompt you to do so
-     </p>
-     <md-input-container>
-			 <label>Org Id</label>
-			 <input name="orgId" ng-model="ctrl.orgId" required></input>
-    </md-input-container>
-    <md-button 
-      class="md-primary"
-      ng-click="ctrl.attemptLogin()">
-        Login to Org
-    </md-button>
+    <div class="login-header">
+      <img src="https://static.askspoke.com/img/logo/avatar-96.png" /><br />
+      <h2>Login to Spoke</h2>
+      <p>If you aren't logged into spoke on Chrome, this will open a new tab.</p>
+    </div>
+    <form ng-submit="ctrl.attemptLogin()">
+      <input
+          name="orgId"
+          ng-model="ctrl.orgId"
+          placeholder="Company slug"
+          required />
+      <input type="submit" style="display: none;"/>
+    </form>
   </md-card-content>
 </md-card>
